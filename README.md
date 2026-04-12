@@ -95,9 +95,11 @@ AI literature review tool
 Semantic search engine for papers
 RAG-based chatbot system
 Academic knowledge explorer
-📸 Demo
+## 📸 Demo
 
-<img width="1365" height="677" alt="image" src="https://github.com/user-attachments/assets/5d014b1a-a4d1-4d20-bf0f-1a00e950f21c" />
+### 🧠 AI Research Paper Finder UI
+
+![AI Research Paper Finder UI](https://github.com/user-attachments/assets/5d014b1a-a4d1-4d20-bf0f-1a00e950f21c)
 
 
 ![UI Screenshot](assets/demo.png)
