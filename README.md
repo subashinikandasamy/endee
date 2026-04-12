@@ -1,2 +1,2 @@
-# ai-research-finder
-AI Research Paper Finder using RAG, FAISS/Endee-compatible vector search and Streamlit
+# AI Research Paper Finder using FAISS + RAG + Streamlit
+An AI-powered research assistant that uses FAISS vector search, RAG pipeline, and Streamlit UI to fetch and summarize academic papers from arXiv.
