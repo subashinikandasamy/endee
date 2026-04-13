@@ -6,9 +6,21 @@
 
 ## 🚀 Overview
 
+🚀 **Live Demonstration:** The system successfully retrieves and summarizes real research papers using semantic vector search and LLMs.
+
 AI Research Paper Finder is a **production-style Retrieval-Augmented Generation (RAG) system** that enables users to search, retrieve, and understand academic research papers using **semantic vector search and Large Language Models (LLMs)**.
 
 The system is designed with a **modular and scalable architecture**, supporting seamless integration with modern vector databases such as Endee.
+
+---
+
+## 📸 Demo
+
+### 🧠 AI Research Paper Finder UI
+
+Live demo showing semantic search + AI-generated response
+
+![AI Research Paper Finder UI](assets/demo.png)
 
 ---
 
@@ -20,6 +32,7 @@ The system is designed with a **modular and scalable architecture**, supporting 
 * ⚡ **Fast Similarity Retrieval** using vector indexing
 * 🌐 **Interactive UI** built with Streamlit
 * 🏗️ **Production-Ready Modular Design**
+* 💬 **Conversational Memory (Bonus Feature)** for follow-up queries
 
 ---
 
@@ -40,6 +53,20 @@ LLM (Hugging Face / API)
    ↓
 Contextual AI Response
 ```
+
+---
+
+## 🧪 Example Output
+
+**Query:**
+"Latest research on transformer models"
+
+**System Behavior:**
+
+* Retrieves top relevant research papers from arXiv
+* Performs semantic similarity search using vector embeddings
+* Generates a summarized, context-aware response using LLM
+* Displays results in an interactive UI
 
 ---
 
@@ -95,6 +122,8 @@ This project is designed with a **pluggable vector database architecture**.
 
 * FAISS is used for **fast local prototyping**
 * The system is fully **compatible with Endee Vector Database**
+
+👉 The vector database layer is abstracted, allowing seamless replacement of FAISS with Endee **without modifying the core RAG pipeline**.
 
 ### Why this matters:
 
@@ -228,5 +257,3 @@ This project demonstrates a **complete end-to-end AI system** combining:
 * Scalable System Design
 
 It reflects **real-world AI engineering practices** and production-level thinking.
-
-
