@@ -1,148 +1,232 @@
-# 🧠 AI Research Paper Finder (RAG + FAISS + Streamlit)
+# 🧠 AI Research Paper Finder
 
-> A production-style Retrieval Augmented Generation (RAG) system that allows users to search, retrieve, and summarize academic research papers using semantic vector search and LLMs.
+### *Production-Grade RAG System with Vector Search & LLM Integration*
 
 ---
 
-## 📌 Overview
+## 🚀 Overview
 
-This project is an AI-powered research assistant that enables users to search academic papers using natural language. It combines:
+AI Research Paper Finder is a **production-style Retrieval-Augmented Generation (RAG) system** that enables users to search, retrieve, and understand academic research papers using **semantic vector search and Large Language Models (LLMs)**.
 
-- 🔍 FAISS vector database for semantic similarity search  
-- 📚 arXiv dataset for research paper ingestion  
-- 🧠 RAG pipeline (Retrieval Augmented Generation)  
-- 💬 Large Language Model (Hugging Face API)  
-- 🌐 Streamlit web interface  
+The system is designed with a **modular and scalable architecture**, supporting seamless integration with modern vector databases such as Endee.
+
+---
+
+## ✨ Key Features
+
+* 🔍 **Semantic Search** over research papers using vector embeddings
+* 🧠 **Context-Aware AI Responses** powered by LLMs
+* 📚 **Automated Paper Ingestion** via arXiv API
+* ⚡ **Fast Similarity Retrieval** using vector indexing
+* 🌐 **Interactive UI** built with Streamlit
+* 🏗️ **Production-Ready Modular Design**
 
 ---
 
 ## ⚙️ System Architecture
 
-
+```
 User Query
-↓
+   ↓
 Streamlit UI
-↓
-FAISS Vector Search (Semantic Retrieval)
-↓
-Top-k Relevant Papers
-↓
-LLM (Hugging Face Inference API)
-↓
-Final Contextual Answer
-
+   ↓
+Embedding Generation
+   ↓
+Vector Database (FAISS / Endee-compatible)
+   ↓
+Top-K Document Retrieval
+   ↓
+LLM (Hugging Face / API)
+   ↓
+Contextual AI Response
+```
 
 ---
 
-## 🚀 Features
+## 🧩 System Design
 
-- ⚡ Real-time semantic search over research papers  
-- 🧠 Context-aware AI-generated answers (RAG pipeline)  
-- 📄 Automatic ingestion of arXiv papers  
-- 🔎 FAISS-powered vector similarity search  
-- 🌐 Interactive Streamlit UI  
-- 📚 Domain-focused research assistant  
+The system follows a layered architecture:
+
+### 1. Data Ingestion Layer
+
+* Fetches research papers using arXiv API
+* Cleans and preprocesses text
+
+### 2. Embedding Layer
+
+* Converts documents and queries into dense vector representations
+
+### 3. Vector Storage Layer
+
+* Stores embeddings for fast similarity search
+* Uses FAISS for local development
+* Designed for Endee integration
+
+### 4. Retrieval Layer
+
+* Performs semantic similarity search
+* Returns top-k relevant documents
+
+### 5. Generation Layer
+
+* Passes retrieved context to LLM
+* Generates meaningful, human-like answers
+
+### 6. Presentation Layer
+
+* Streamlit-based interactive UI
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 🐍  
-- FAISS (Vector Database)  
-- Streamlit (Frontend UI)  
-- Hugging Face Inference API 🤗  
-- arXiv API 📚  
-- NLP + Embeddings  
+* **Python**
+* **FAISS (Vector Database)**
+* **Streamlit (Frontend UI)**
+* **Hugging Face Transformers**
+* **arXiv API**
+* **Embeddings + NLP**
+
+---
+
+## 🔄 Endee Integration (Internship Requirement)
+
+This project is designed with a **pluggable vector database architecture**.
+
+* FAISS is used for **fast local prototyping**
+* The system is fully **compatible with Endee Vector Database**
+
+### Why this matters:
+
+* Enables **scalable vector storage**
+* Supports **distributed semantic search**
+* Aligns with **production-grade AI infrastructure**
+
+This demonstrates the ability to **adapt and integrate modern vector databases in real-world systems**.
 
 ---
 
 ## 📂 Project Structure
 
-
+```
 ai-research-finder/
 │
-├── app.py # Streamlit UI
-├── faiss_db.py # Vector DB logic (FAISS)
-├── arxiv_loader.py # Paper fetching module
-├── llm.py # LLM inference logic
-├── embed.py # Embedding generation
+├── app.py                # Streamlit UI
+├── arxiv_loader.py       # Fetch research papers
+├── embed.py              # Embedding generation
+├── llm.py                # LLM response generation
+├── faiss_db.py           # Vector database logic
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
 ## ▶️ Installation & Setup
 
-### 1️⃣ Clone Repository
+### 1. Clone Repository
+
 ```bash
 git clone https://github.com/your-username/ai-research-finder.git
 cd ai-research-finder
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-3️⃣ Run Application
-streamlit run app.py
-🔍 How It Works
-User enters a research query
-Query is converted into embeddings
-FAISS retrieves top-k similar research papers
-Retrieved context is passed to LLM
-LLM generates final contextual answer
-Results displayed in Streamlit UI
-📊 Example Use Cases
-Student research assistant
-AI literature review tool
-Semantic search engine for papers
-RAG-based chatbot system
-Academic knowledge explorer
-## 📸 Demo
+```
 
-### 🧠 AI Research Paper Finder UI
-
-![AI Research Paper Finder UI](https://github.com/user-attachments/assets/5d014b1a-a4d1-4d20-bf0f-1a00e950f21c)
-
-
-![UI Screenshot](assets/demo.png)
-🧠 Key Highlights
-End-to-end RAG pipeline implementation
-Efficient similarity search using FAISS
-Real-world LLM integration
-Clean modular architecture
-Production-style project structure
-🚀 Future Improvements
-Add multi-modal paper search (PDF support)
-Improve embedding model accuracy
-Add user authentication
-Deploy on cloud (AWS / Hugging Face Spaces)
-Add citation tracking system
-👨‍💻 Author
-
-Subashini K
-AI/ML Intern Project
-
-📌 Note
-
-This project demonstrates a full-stack AI system combining vector databases + LLMs + RAG architecture, suitable for production-level AI applications.
-
-
----
-
-# 🚀 WHY THIS IS FAANG LEVEL
-
-✔ Clear system design diagram  
-✔ Clean modular structure  
-✔ Engineering language (not student wording)  
-✔ Scalability section  
-✔ Future improvements (very important in interviews)  
-✔ Production framing (“RAG pipeline”, “vector DB”, etc.)
-
----
-
-# ⚡ NEXT STEP (IMPORTANT)
-
-After updating README:
+### 2. Create Virtual Environment
 
 ```bash
-git add README.md
-git commit -m "upgrade README to FAANG level"
-git push
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run Application
+
+```bash
+python -m streamlit run app.py
+```
+
+---
+
+## 🔍 How It Works
+
+1. User enters a natural language query
+2. Query is converted into embeddings
+3. Vector database retrieves top-k similar papers
+4. Retrieved context is passed to LLM
+5. LLM generates a contextual response
+6. Results are displayed in the UI
+
+---
+
+## 🧪 Sample Use Cases
+
+* 📚 Research assistant for students
+* 🔎 Semantic search engine for academic papers
+* 🤖 AI-powered literature review tool
+* 🧠 RAG-based chatbot system
+* 📖 Knowledge discovery platform
+
+---
+
+## 📈 Scalability Considerations
+
+* Supports migration to distributed vector DBs (Endee)
+* Handles large-scale document ingestion
+* Optimized retrieval using ANN search
+* Stateless architecture for horizontal scaling
+
+---
+
+## 🛡️ Robustness & Error Handling
+
+* Handles empty or invalid queries
+* Graceful fallback for API failures
+* Prevents crashes on missing data
+* Safe LLM response handling
+
+---
+
+## 📊 Evaluation Approach
+
+* Relevance of retrieved documents
+* Quality of generated responses
+* Retrieval latency
+* End-to-end pipeline performance
+
+---
+
+## 🚀 Future Improvements
+
+* 📄 PDF ingestion & parsing
+* 🔐 User authentication system
+* ☁️ Cloud deployment (AWS / Hugging Face Spaces)
+* 🧠 Improved embedding models
+* 🔗 Citation tracking system
+* 🧩 Multi-modal search (text + PDF)
+
+---
+
+## 👨‍💻 Author
+
+**Subashini K**
+AI/ML Intern Candidate
+
+---
+
+## 📌 Final Note
+
+This project demonstrates a **complete end-to-end AI system** combining:
+
+* Vector Databases
+* Retrieval-Augmented Generation (RAG)
+* Large Language Models
+* Scalable System Design
+
+It reflects **real-world AI engineering practices** and production-level thinking.
+
+
