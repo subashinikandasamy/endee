@@ -7,20 +7,11 @@
 ## 🚀 Overview
 
 🚀 **Live Demonstration:** The system successfully retrieves and summarizes real research papers using semantic vector search and LLMs.
+✅ **Fully working end-to-end RAG pipeline tested locally**
 
 AI Research Paper Finder is a **production-style Retrieval-Augmented Generation (RAG) system** that enables users to search, retrieve, and understand academic research papers using **semantic vector search and Large Language Models (LLMs)**.
 
 The system is designed with a **modular and scalable architecture**, supporting seamless integration with modern vector databases such as Endee.
-
----
-
-## 📸 Demo
-
-### 🧠 AI Research Paper Finder UI
-
-Live demo showing semantic search + AI-generated response
-
-![AI Research Paper Finder UI](assets/demo.png)
 
 ---
 
@@ -67,6 +58,18 @@ Contextual AI Response
 * Performs semantic similarity search using vector embeddings
 * Generates a summarized, context-aware response using LLM
 * Displays results in an interactive UI
+
+---
+
+## 📸 Demo
+
+The system has been **successfully executed locally** and produces:
+
+* Relevant research paper retrieval based on semantic similarity
+* Context-aware AI-generated answers using retrieved documents
+* Interactive results displayed via Streamlit UI
+
+*(Screenshots can be provided upon request or viewed during local execution)*
 
 ---
 
@@ -257,3 +260,4 @@ This project demonstrates a **complete end-to-end AI system** combining:
 * Scalable System Design
 
 It reflects **real-world AI engineering practices** and production-level thinking.
+
